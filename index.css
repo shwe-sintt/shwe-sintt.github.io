@@ -3,6 +3,14 @@
     transform: scale(1.2) translateY(15px); 
     transition: transform 0.3s ease-in-out;
   }
+  .icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out; /* Add transition for color change */
+}
+
+
 nav {
     background-color: transparent;
     color: #000000;
@@ -189,5 +197,28 @@ nav .dropdown-content a:hover {
     .article-card {
         width: 60%;
     }
+    .topnav {
+        background-color: #333;
+        position: relative;
+      }
+      
+      .topnav #myLinks {
+        display: none;
+      }
+      
+      .topnav a {
+        float: left;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      .icon{
+        display: block;
+        animation: reverse 1s ;
+      }
+      .active {
+        background-color: #04AA6D;
+        color: white;
+      }
     
 }

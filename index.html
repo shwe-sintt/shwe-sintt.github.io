@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<div>
     <video autoplay muted loop id="background-video">
         <source src="video/pexels_videos_2657265 (2160p).mp4" type="video/mp4">
     </video>
+    <div class="topnav">
     <nav>
-        <img src="wx.svg" class="logo-svg" alt="WX Logo"> 
+        <img src="wx.svg" class="logo-svg" alt="WX Logo">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a> 
+        <div id="myLinks">
         <ul>
             <li><a href="#" class="current-page">Home</a></li>
             <li class="dropdown">
@@ -26,7 +32,10 @@
             <li><a href="cruise.html">Cruises</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
+    </div>
+    
     </nav>
+    </div>
 
     <section class="hero">
         <h1>Welcome to World Xplore</h1>
@@ -58,8 +67,21 @@
             <p>Experience the charm and beauty of Myanmar like never before.</p>
         </article>
     </section>
+    
     <footer>
         <p>&copy; 2023 World Xplore</p>
     </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+    
 </body>
 </html>
